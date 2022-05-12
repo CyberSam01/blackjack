@@ -29,14 +29,17 @@ h1 {
     font-style: italic;
     margin-bottom: 30px;
     margin-top: 30px;
+    font-size: 60px;
 }
 
 #cards-el {
     margin: 0;
+    font-size: 40px;
 }
 
 #sum-el {
     margin: 10px 0 30px 0;
+    font-size: 40px;
 }
 
 .buttons{
