@@ -12,13 +12,12 @@ body {
 .container {
     background-image: url("images/table.png");
     background-size: cover;
-    width: 60%;
+    width: 70%;
     box-shadow: 0 0 10px black;
     border-radius: 10px;
     margin: auto;
     padding: 30px 0;
     border: 8px solid white;
-    height: 700px;
 }
 
 h1 {
