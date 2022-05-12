@@ -29,6 +29,7 @@ function startGame(){
     isAlive = true
     hasBlackJack = false
     document.getElementById("start-button").style.display = "none"
+    document.getElementById("card-button").style.display = "inline-block"
     document.getElementById("pass-button").style.display = "inline-block"
     let firstCard = getRandomCard()
     let secondCard = getRandomCard()
@@ -54,12 +55,14 @@ function renderGame(){
         player.chips += 1000
         document.getElementById("start-button").style.display = "inline-block"
         document.getElementById("pass-button").style.display = "none"
+        document.getElementById("card-button").style.display = "none"
     } else {
-        message = `You got ${sum}! You'r death!`;
+        message = `You got ${sum}! You're death!`;
         isAlive = false
         player.chips -= 5
         document.getElementById("start-button").style.display = "inline-block"
         document.getElementById("pass-button").style.display = "none"
+        document.getElementById("card-button").style.display = "none"
     }
     messageEl.textContent = message
 }
@@ -107,6 +110,7 @@ function compRenderGame() {
     sumEl.textContent = `You: ${sum}`
     document.getElementById("start-button").style.display = "inline-block"
     document.getElementById("pass-button").style.display = "none"
+    document.getElementById("card-button").style.display = "none"
 }
 
 function compNewCard() {
